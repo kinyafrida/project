@@ -6,7 +6,7 @@ require_once dirname(__FILE__) . '/header.php';
 	
 	// save the details
 	$customer_id_number =$_REQUEST["customer_id_number"];
-}
+
 ?>
 <!-- start: Content -->
             <div id="content">				
@@ -23,7 +23,7 @@ require_once dirname(__FILE__) . '/header.php';
               <div class="col-md-12 top-20 padding-0">
                 <div class="col-md-12">
                   <div class="panel">
-                    <div class="panel-heading"><h3>Report <a href="add.php"><span class="icons icon-plus add-span" title="Add"></span></a></h3></div>
+                    <div class="panel-heading"><h3>Loan Status <a href="add.php"><span class="icons icon-plus add-span" title="Add"></span></a></h3></div>
                     <div class="panel-body">
 						<?php
 						//$customer_id_number = "26398092";

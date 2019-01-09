@@ -8,7 +8,7 @@ require_once dirname(__FILE__) . '/header.php';
 				<div class="panel">
                   <div class="panel-body">
                       <div class="col-md-12 col-sm-12">
-                        <h3 class="animated fadeInLeft">Propertyfind - Properties</h3>
+                        <h3 class="animated fadeInLeft">MY Reports</h3>
                         <ul class="nav navbar-nav">
                            <li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">View Reports</button></li>
                         </ul>
@@ -48,7 +48,7 @@ require_once dirname(__FILE__) . '/header.php';
               <div class="col-md-12 top-20 padding-0">
                 <div class="col-md-12">
                   <div class="panel">
-                    <div class="panel-heading"><h3>All Properties <a href="addProperty.php"><span class="icons icon-plus add-span" title="Add"></span></a></h3></div>
+                    <div class="panel-heading"><h3>Loans <a href="add.php"><span class="icons icon-plus add-span" title="Add"></span></a></h3></div>
                     <div class="panel-body">
 						<?php
 						$customer_id_number = "26398092";

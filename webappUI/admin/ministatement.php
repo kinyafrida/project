@@ -22,26 +22,30 @@ require_once dirname(__FILE__) . '/header.php';
               <div class="col-md-12 top-20 padding-0">
                 <div class="col-md-12">
                   <div class="panel">
-                    <div class="panel-heading"><h3>Report <a href="add.php"><span class="icons icon-plus add-span" title="Add"></span></a></h3></div>
+                    <div class="panel-heading"><h3>Ministatement <a href="add.php"><span class="icons icon-plus add-span" title="Add"></span></a></h3></div>
                     <div class="panel-body">
 						<?php
 						//$customer_id_number = "26398092";
 						
 						$result = $connect -> callAPI('GET','http://104.248.118.5/my_app/v1/ministatement/'.$customer_id_number,false);
 						$response=json_decode($result,true);
-						//$loans=$response['loans'];
+						$loans=$response['loans'];
 						//$customer_id_number=$response['loans']['id_number'];
 						?>
 						Customer ID : <?php echo $customer_id_number ?>;
+						<?php
+						  foreach($loans as $row){?>
 						<div>
-						<p><b>date: <?php echo($response['datetimeadded']) ?></b></p>
+						<p><b>date: <?php echo($row['datetimeadded']) ?></b></p>
 						</div>
 						<div>
-						<p><b>Loan Amount: <?php echo($response['loan_amount']) ?></b></p></div>
+						<p><b>Loan Amount: <?php echo($row['loan_amount']) ?></b></p></div>
 						<div>
-						<p><b>Loan Status: <?php echo($response['loan_status']) ?></b></p></div>
+						<p><b>Loan Status: <?php echo($row['loan_status']) ?></b></p></div>
 						
-						<button type="button" class="btn btn-info btn-lg" value="Download"
+						<?php } ?>
+						<div><button type="button" class="btn btn-info btn-lg" value="Download"> Download</button></div>
+						
                       
                   </div>
                 </div>

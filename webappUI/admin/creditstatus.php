@@ -12,7 +12,7 @@ require_once dirname(__FILE__) . '/header.php';
 				<div class="panel">
                   <div class="panel-body">
                       <div class="col-md-12 col-sm-12">
-                        <h3 class="animated fadeInLeft">Response</h3> <?php echo $customer_id_number ?>
+                        <h3 class="animated fadeInLeft">Response</h3>
                         <ul class="nav navbar-nav">
                             
                         </ul>
@@ -22,7 +22,7 @@ require_once dirname(__FILE__) . '/header.php';
               <div class="col-md-12 top-20 padding-0">
                 <div class="col-md-12">
                   <div class="panel">
-                    <div class="panel-heading"><h3>Report <a href="add.php"><span class="icons icon-plus add-span" title="Add"></span></a></h3></div>
+                    <div class="panel-heading"><h3>Credit Status <a href="add.php"><span class="icons icon-plus add-span" title="Add"></span></a></h3></div>
                     <div class="panel-body">
 						<?php
 						//$customer_id_number = "26398092";
